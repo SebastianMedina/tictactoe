@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TIC TAC TOE</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="sweetAlert/sweetalert.css">
+  </head>
+  <body>
+    <h1 class="title">TIC TAC TOE</h1>
+    <div class="container">
+      <div class="contRight">
+        <div class="contO"></div>
+        <div class="contX">
+          <h2>X</h2>
+        </div>
+      </div>
+      <div class="tictactoe">
+        <div class="rowUp">
+          <canvas id="canvas1" width="155" height="155" onclick="loop(1)"></canvas>
+          <canvas id="canvas2" width="155" height="155" onclick="loop(2)"></canvas>
+          <canvas id="canvas3" width="155" height="155" onclick="loop(3)"></canvas>
+        </div>
+        <div class="rowMedium">
+          <canvas id="canvas4" width="155" height="155" onclick="loop(4)"></canvas>
+          <canvas id="canvas5" width="155" height="155" onclick="loop(5)"></canvas>
+          <canvas id="canvas6" width="155" height="155" onclick="loop(6)"></canvas>
+        </div>
+        <div class="rowBottom">
+          <canvas id="canvas7" width="155" height="155" onclick="loop(7)"></canvas>
+          <canvas id="canvas8" width="155" height="155" onclick="loop(8)"></canvas>
+          <canvas id="canvas9" width="155" height="155" onclick="loop(9)"></canvas>
+        </div>
+      </div>
+      <div class="contLeft">
+        <div class="contX">
+          <h2>X</h2>
+        </div>
+        <div class="contO"></div>
+      </div>
+    </div>
+  </body>
+  <script src="sweetAlert/sweetalert.min.js"></script>
+  <script src="game/index.js" charset="utf-8"></script>
+</html>
